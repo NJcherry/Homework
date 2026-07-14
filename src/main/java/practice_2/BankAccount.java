@@ -22,17 +22,35 @@ public class BankAccount {
     }
 
     public double deposit(double amount) {
+        if (amount <= 0) {
+            throw new IllegalArgumentException(
+                    "Сумма пополнения должна быть больше нуля"
+            );
+        }
+
         this.balance = this.balance + amount;
         return this.balance;
     }
 
     public double withdraw(double amount) {
+        if (amount <= 0) {
+            throw new IllegalArgumentException(
+                    "Сумма снятия должна быть больше нуля"
+            );
+        }
+
+        if (amount > this.balance) {
+            throw new IllegalArgumentException(
+                    "Недостаточно средств на счете"
+            );
+        }
+
         this.balance = this.balance - amount;
         return this.balance;
     }
 
     void printBalance() {
-        System.out.println("Баланс средств: " + this.balance);
+        System.out.println("Баланс средств клиента " + this.owner + ": " + this.balance);
     }
 
     public static void main(String[] args) {

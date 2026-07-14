@@ -1,3 +1,5 @@
+package practice_1;
+
 public class HelloWorld {
  //   static int a = 1;
 

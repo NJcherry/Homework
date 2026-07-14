@@ -32,6 +32,6 @@ public class Circle {
 
         double length = circle.calculateCircumference();
 
-        System.out.println("Радиус: " + circle.radius + "\nПлощадь: " + area + "\nДлина: " + length);
+        System.out.println("Радиус: " + circle.getRadius() + "\nПлощадь: " + area + "\nДлина: " + length);
     }
 }
