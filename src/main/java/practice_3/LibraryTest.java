@@ -8,5 +8,7 @@ public class LibraryTest {
         library.author = "Шарль Перро";
         library.year = 2020;
         library.category = "Сказки";
+
+        System.out.println("Название: " + library.getBookTitle() + "\nАвтор: " +  library.getAuthor() + "\nГод: " + library.getYear() + "\nКатегория: " + library.getCategory());
     }
 }

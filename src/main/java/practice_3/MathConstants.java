@@ -13,8 +13,7 @@ public class MathConstants {
     }
 
     static double calculateExponentialGrowth(double initialValue, double rate, double time) {
-        double result = initialValue * Math.pow(E, rate * time);
-        return result;
+        return initialValue * Math.pow(E, rate * time);
     }
 
     public static void main(String[] args) {

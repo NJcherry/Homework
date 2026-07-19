@@ -31,7 +31,7 @@ public class Person {
         this.lastName = newLastName;
     }
 
-    public void printPersoninfo() {
+    public void printPersonInfo() {
         System.out.println("Имя: " + this.firstName + ", Фамилия: " + this.lastName + ", SSN: " + this.ssn);
     }
 
@@ -42,8 +42,8 @@ public class Person {
 
         ivan.setFirstName("Андрей");
 
-        ivan.printPersoninfo();
-        maria.printPersoninfo();
-        oleg.printPersoninfo();
+        ivan.printPersonInfo();
+        maria.printPersonInfo();
+        oleg.printPersonInfo();
     }
 }

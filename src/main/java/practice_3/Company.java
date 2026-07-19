@@ -29,9 +29,7 @@ public class Company {
 
         Company.companyName = "Inovation";
 
-        olga.printCompanyName();
-        ivan.printCompanyName();
-        anna.printCompanyName();
+        Company.printCompanyName();
 
         //olga.employeeID = 5;
     }
