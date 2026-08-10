@@ -10,10 +10,13 @@ public class ForHwTask {
 
         //multiplyTable();
 
-        //System.out.println(checkNumberIsPrime());
+        System.out.println(checkNumberIsPrime());
 
-        printNumbersUpTo10();
+        //printNumbersUpTo10();
     }
+
+    static Scanner scanner = new Scanner(System.in);
+
     public static void printNumbersDivisibleBy3() {
         for (int i = 1; i <= 100; i++) {
             if (i % 3 == 0) {
@@ -23,8 +26,6 @@ public class ForHwTask {
     }
 
     public static int printSumOfNumbers() {
-        Scanner scanner = new Scanner(System.in);
-
         int sum = 0;
         int n = scanner.nextInt();
         for (int i = 1; i <= n; i++) {
@@ -34,8 +35,6 @@ public class ForHwTask {
     }
 
     public static void multiplyTable() {
-        Scanner scanner = new Scanner(System.in);
-
         int n = scanner.nextInt();
         for (int i = 1; i <= 10; i++) {
             System.out.println(n + "x" + i + "=" + n * i);
@@ -43,17 +42,18 @@ public class ForHwTask {
     }
 
     public static boolean checkNumberIsPrime() {
-        Scanner scanner = new Scanner(System.in);
-
-        boolean isPrime = true;
         int n = scanner.nextInt();
+
+        if (n < 2) {
+            return false;
+        }
+
         for (int i = 2; i <= n - 1; i++) {
             if (n % i == 0) {
-                isPrime = false;
-                break;
+                return false;
             }
         }
-        return isPrime;
+        return true;
     }
 
     public static void printNumbersUpTo10() {

@@ -16,9 +16,10 @@ public class IfElseHwTask {
 
         System.out.println(giveResult());
     }
-    public static String defineNumber() {
-        Scanner scanner = new Scanner(System.in);
 
+    static Scanner scanner = new Scanner(System.in);
+
+    public static String defineNumber() {
         String message = "";
 
         System.out.print("Введите число: ");
@@ -34,8 +35,6 @@ public class IfElseHwTask {
     }
 
     public static String findMax() {
-        Scanner scanner = new Scanner(System.in);
-
         String message = "";
         System.out.print("Введите первое число: ");
         int number1 = scanner.nextInt();
@@ -50,8 +49,6 @@ public class IfElseHwTask {
     }
 
     public static String giveMark() {
-        Scanner scanner = new Scanner(System.in);
-
         String description = "";
         System.out.print("Введите оценку: ");
         int mark = scanner.nextInt();
@@ -70,8 +67,6 @@ public class IfElseHwTask {
     }
 
     public static String checkParity() {
-        Scanner scanner = new Scanner(System.in);
-
         String parity = "Нечетное";
         int number = scanner.nextInt();
         if (number % 2 == 0) {
@@ -81,8 +76,6 @@ public class IfElseHwTask {
     }
 
     public static String makeDiscount() {
-        Scanner scanner = new Scanner(System.in);
-
         String discount = "Без скидки";
         System.out.print("Введите возраст: ");
         int age = scanner.nextInt();
@@ -95,8 +88,6 @@ public class IfElseHwTask {
     }
 
     public static String giveResult() {
-        Scanner scanner = new Scanner(System.in);
-
         System.out.print("Введите количество баллов: ");
         String result = "Несуществующая оценка";
         int points = scanner.nextInt();

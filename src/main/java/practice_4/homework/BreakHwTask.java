@@ -13,9 +13,9 @@ public class BreakHwTask {
         stopProgram();
     }
 
-    public static void calculateSumBeforeNegative() {
-        Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
 
+    public static void calculateSumBeforeNegative() {
         int sum = 0;
         int number;
 
@@ -37,9 +37,7 @@ public class BreakHwTask {
     }
 
     public static void printOnlyPositiveNumbers() {
-        Scanner scanner = new Scanner(System.in);
-
-        while (true) {
+            while (true) {
             int number = scanner.nextInt();
             if (number < 0) continue;
             if (number == 0) break;
@@ -48,15 +46,12 @@ public class BreakHwTask {
     }
 
     public static void stopProgram() {
-        Scanner scanner = new Scanner(System.in);
-
-        String command = "stop";
         String input;
 
         while (true) {
             System.out.print("Введите команду: ");
             input = scanner.nextLine();
-            if (input.equals(command)) break;
+            if (input.equals("stop")) break;
         }
     }
 }

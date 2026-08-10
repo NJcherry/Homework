@@ -10,9 +10,10 @@ public class WhileHwTask {
 
         printReverseNumbers();
     }
-    public static int calculateFactorial() {
-        Scanner scanner = new Scanner(System.in);
 
+    static Scanner scanner = new Scanner(System.in);
+
+    public static int calculateFactorial() {
         int result = 1;
         int i = 1;
         int n = scanner.nextInt();
@@ -24,8 +25,6 @@ public class WhileHwTask {
     }
 
     public static void printAllEvenNumbers() {
-        Scanner scanner = new Scanner(System.in);
-
         int i = 1;
         int n = scanner.nextInt();
         while (i <= n) {
@@ -37,8 +36,6 @@ public class WhileHwTask {
     }
 
     public static void printReverseNumbers() {
-        Scanner scanner = new Scanner(System.in);
-
         int number = scanner.nextInt();
         while (number >= 1) {
             System.out.println(number);

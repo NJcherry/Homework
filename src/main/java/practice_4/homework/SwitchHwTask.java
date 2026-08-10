@@ -14,9 +14,10 @@ public class SwitchHwTask {
 
         System.out.println(calculateNumbers());
     }
-    public static String printDayOfWeek() {
-        Scanner scanner= new Scanner(System.in);
 
+    static Scanner scanner= new Scanner(System.in);
+
+    public static String printDayOfWeek() {
         String dayOfWeek = "";
         System.out.print("Введите номер дня: ");
         int day = scanner.nextInt();
@@ -49,8 +50,6 @@ public class SwitchHwTask {
     }
 
     public static int printTicketPrice() {
-        Scanner scanner= new Scanner(System.in);
-
         int ticketPrice = 0;
         System.out.print("Введите номер дня: ");
         int day = scanner.nextInt();
@@ -65,8 +64,6 @@ public class SwitchHwTask {
     }
 
     public static String printLetterMark() {
-        Scanner scanner= new Scanner(System.in);
-
         String mark = "Несуществующая оценка";
         System.out.print("Введите количество баллов: ");
         int points = scanner.nextInt();
@@ -85,8 +82,6 @@ public class SwitchHwTask {
     }
 
     public static String processCommand() {
-        Scanner scanner= new Scanner(System.in);
-
         String description = "";
         System.out.print("Введите команду: ");
         String command = scanner.nextLine();
@@ -110,8 +105,6 @@ public class SwitchHwTask {
     }
 
     public static int calculateNumbers() {
-        Scanner scanner= new Scanner(System.in);
-
         int result = 0;
         System.out.print("Введите первое число: ");
         int number1 = scanner.nextInt();
