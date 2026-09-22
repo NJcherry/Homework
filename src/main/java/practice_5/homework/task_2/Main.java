@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
         Pet dog = new Dog();
         Pet cat = new Cat();
-        Owner Ann = new Owner();
+        Owner ann = new Owner();
 
-        Ann.feedMyPet(dog);
-        Ann.interactWithPet(dog);
-        Ann.feedMyPet(cat);
-        Ann.interactWithPet(cat);
+        ann.feedMyPet(dog);
+        ann.interactWithPet(dog);
+        ann.feedMyPet(cat);
+        ann.interactWithPet(cat);
     }
 }

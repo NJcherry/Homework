@@ -6,7 +6,6 @@ public class Main {
 
         Menu menu = new Menu();
         menu.addDish(soup);
-        menu.showDescription();
 
         Drink juice = new Drink(250);
         menu.addDish(juice);

@@ -9,8 +9,8 @@ public class Dog extends Pet{
     }
 
     @Override
-    public void intract() {
-        super.intract();
+    public void interact() {
+        super.interact();
         System.out.println("Гулять");
     }
 }

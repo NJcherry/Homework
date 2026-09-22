@@ -1,13 +1,20 @@
 package practice_5.homework.task_3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Menu {
-    private Dish dish;
+    private List<Dish> dishes;
+
+    public Menu() {
+        this.dishes = new ArrayList<>();
+    }
 
     public void addDish(Dish dish) {
-        this.dish = dish;
+        dishes.add(dish);
     }
 
     public void showDescription() {
-        this.dish.showDescription();
+        dishes.forEach(dish -> dish.showDescription());
     }
 }

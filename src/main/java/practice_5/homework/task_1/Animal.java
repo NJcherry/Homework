@@ -1,7 +1,15 @@
 package practice_5.homework.task_1;
 
 public class Animal implements Moveable, Soundable{
-    protected String name;
+    private String name;
+
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     @Override
     public void move() {

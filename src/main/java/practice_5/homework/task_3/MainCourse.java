@@ -1,7 +1,5 @@
 package practice_5.homework.task_3;
 
-import practice_5.homework.task_2.Main;
-
 public class MainCourse extends Dish{
     private double temperature;
 

@@ -6,6 +6,6 @@ public class Owner {
     }
 
     public void interactWithPet(Pet pet) {
-        pet.intract();
+        pet.interact();
     }
 }

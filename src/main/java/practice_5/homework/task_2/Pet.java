@@ -7,7 +7,7 @@ public class Pet implements Feedable, Interactable{
     }
 
     @Override
-    public void intract() {
+    public void interact() {
         System.out.print("Ухаживать: ");
     }
 }

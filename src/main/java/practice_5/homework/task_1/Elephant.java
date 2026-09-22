@@ -2,7 +2,7 @@ package practice_5.homework.task_1;
 
 public class Elephant extends Animal{
     public Elephant(String name) {
-        this.name = name;
+        super(name);
     }
 
     @Override
