@@ -12,13 +12,11 @@ public class Task4 {
     }
 
     public void calculateSum() {
-        AtomicInteger sum = new AtomicInteger();
+        int sum = 0;
 
-        numbers.forEach(
-                number -> {
-                    sum.set(sum.get() + number);
-                }
-        );
+        for (Integer number : numbers) {
+            sum = sum + number;
+        }
         System.out.println("Сумма чисел равна: " + sum);
     }
 

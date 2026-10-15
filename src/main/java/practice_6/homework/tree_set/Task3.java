@@ -18,6 +18,8 @@ public class Task3 {
         Integer result = numbers.higher(number);
         if (result != null) {
             System.out.println("Большее число: " + result);
+        } else {
+            System.out.println("Большее число не найдено");
         }
     }
 
@@ -25,6 +27,8 @@ public class Task3 {
         Integer result = numbers.lower(number);
         if (result != null) {
             System.out.println("Меньшее число: " + result);
+        } else {
+            System.out.println("Меньшее число не найдено");
         }
     }
 

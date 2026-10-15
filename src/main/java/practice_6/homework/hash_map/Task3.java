@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Task3 {
-    private HashMap<String, Integer> people;
+    private Map<String, Integer> people;
 
     public Task3() {
         this.people = new HashMap<>();
@@ -25,8 +25,8 @@ public class Task3 {
     }
 
     public static void main(String[] args) {
-        Task3 people = new Task3();
+        Task3 task = new Task3();
 
-        people.printUnderage(people.people);
+        task.printUnderage(task.people);
     }
 }

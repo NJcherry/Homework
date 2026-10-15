@@ -16,7 +16,9 @@ public class Task1 {
     }
 
     public void printWords() {
-        System.out.println(animals);
+        while (!animals.isEmpty()) {
+            System.out.println(animals.pop());
+        }
     }
 
     public static void main(String[] args) {

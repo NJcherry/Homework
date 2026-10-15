@@ -11,16 +11,14 @@ public class Task3 {
         this.words = new ArrayList<>(Arrays.asList("cat", "rabbit", "giraffe", "elephant"));
     }
 
-    public AtomicReference<String> findLongest() {
-        AtomicReference<String> longest = new AtomicReference<>("");
+    public String findLongest() {
+        String  longest = "";
 
-        words.forEach(
-                word -> {
-                    if (word.length() > longest.get().length()) {
-                        longest.set(word);
-                    }
+        for (String word : words) {
+                if (word.length() > longest.length()) {
+                    longest = word;
                 }
-        );
+            }
         return longest;
     }
 

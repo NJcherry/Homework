@@ -21,7 +21,7 @@ public class Task3 {
     }
 
     public void addPage(String id, String pageName) {
-        if (history.size() == 10) {
+        if (history.size() >= 10) {
             String firstKey = history.keySet().iterator().next();
             history.remove(firstKey);
         }

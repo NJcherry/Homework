@@ -4,11 +4,7 @@ import java.util.*;
 
 public class Task3 {
     public Set<String> removeDuplicates(List<String> input) {
-        Set<String> set = new HashSet<>();
-
-        set.addAll(input);
-
-        return set;
+        return new HashSet<>(input);
     }
 
     public static void main(String[] args) {
