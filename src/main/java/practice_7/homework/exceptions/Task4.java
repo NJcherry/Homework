@@ -5,6 +5,10 @@ import java.util.regex.Pattern;
 
 public class Task4 {
     public void checkEmail(String email) throws InvalidEmailException {
+        if (email == null) {
+            throw new InvalidEmailException("Email не может быть null");
+        }
+
         String regex = "^[\\w.+-]+@[\\w.-]+\\.[a-zA-Z]{2,}$";
 
         Pattern pattern = Pattern.compile(regex);
@@ -19,7 +23,19 @@ public class Task4 {
     public static void main(String[] args) {
         Task4 task = new Task4();
 
-        task.checkEmail("example@gmail.com");
-        task.checkEmail("invalid-email-com");
+        String[] emails = {
+                "example@gmail.com",
+                "invalid-email-com",
+                null,
+                "test@yandex.ru"
+        };
+
+        for (String email : emails) {
+            try {
+                task.checkEmail(email);
+            } catch (InvalidEmailException e) {
+                System.out.println(e.getMessage());
+            }
+        }
     }
 }

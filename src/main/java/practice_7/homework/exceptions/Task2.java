@@ -1,8 +1,8 @@
 package practice_7.homework.exceptions;
 
 public class Task2 {
-    public int divideNumbers(int a, int b) {
-        int result = a / b;
+    public double divideNumbers(int a, int b) {
+        double result = a / b;
         return result;
     }
 

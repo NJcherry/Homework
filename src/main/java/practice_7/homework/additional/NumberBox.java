@@ -1,14 +1,18 @@
 package practice_7.homework.additional;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class NumberBox<T extends Number> {
-    private List<T> numbers;
+    private List<Integer> numbers;
 
     public NumberBox() {
-        this.numbers = (List<T>) new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+        this.numbers = new ArrayList<>();
+
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
     }
 
     public double getSum(List<T> list) {
@@ -20,7 +24,7 @@ public class NumberBox<T extends Number> {
     }
 
     public static void main(String[] args) {
-        NumberBox numberBox = new NumberBox();
+        NumberBox<Integer> numberBox = new NumberBox<>();
 
         System.out.println(numberBox.getSum(numberBox.numbers));
     }
